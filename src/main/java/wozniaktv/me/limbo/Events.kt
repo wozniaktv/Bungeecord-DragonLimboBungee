@@ -17,6 +17,10 @@ class Events : Listener {
     @EventHandler
     fun serverSwitch(event: ServerSwitchEvent){
 
+        if(event.from == null) {
+            return
+        }
+
         if(event.from.name == "limbo"){
 
             if(main!!.fromWhere!!.containsKey(event.player.uniqueId)){

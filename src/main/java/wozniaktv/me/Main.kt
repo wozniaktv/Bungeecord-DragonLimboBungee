@@ -17,7 +17,7 @@ class Main : Plugin() {
     }
 
 
-    fun instanceVariables(){
+    private fun instanceVariables(){
 
         instance = this
         fromWhere= HashMap()
@@ -42,7 +42,7 @@ class Main : Plugin() {
 
     }
 
-    fun registerListeners(){
+    private fun registerListeners(){
 
         proxy.pluginManager.registerListener(this, Events())
 

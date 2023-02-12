@@ -1,0 +1,4 @@
+name: DragonLimbo
+version: '${project.version}'
+main: wozniaktv.me.Main
+description: Sends players to the Limbo
